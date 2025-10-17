@@ -11,7 +11,7 @@ items_db: List[Item] = []
 
 @app.get("/")
 def read_root():
-    return {"message": "Bienvenido a la API de tareas PRUEBAS AR!"}
+    return {"message": "Bienvenido a la API de tareas!"}
 
 @app.get("/items", response_model=List[Item])
 def get_items():
