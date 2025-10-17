@@ -30,7 +30,7 @@ def test_get_item_by_id():
 
 def test_update_item():
 	response = client.put("/items/1", json={"name": "Tarea Actualizada",
-"description": "Nueva descripción"})
+"description": "Nueva descripcion"})
 	assert response.status_code == 200
 	item = response.json()
 	assert item["name"] == "Tarea Actualizada"
